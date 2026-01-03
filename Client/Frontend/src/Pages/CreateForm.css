@@ -1,0 +1,101 @@
+/* CreateForm.css */
+
+.create-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 6, 23, 0.85); /* dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Card */
+.create-form {
+  background-color: #020617;
+  border-radius: 12px;
+  padding: 26px;
+  width: 500px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1e293b;
+}
+
+/* Heading */
+.create-form h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #e5e7eb;
+  text-align: center;
+}
+
+/* Labels */
+.create-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* Inputs */
+.create-form input[type="text"],
+.create-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  background-color: #020617;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #e5e7eb;
+  outline: none;
+}
+
+.create-form input::placeholder {
+  color: #64748b;
+}
+
+.create-form input:focus,
+.create-form select:focus {
+  border-color: #3b82f6;
+}
+
+/* Buttons */
+.create-form .button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.create-form button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Create Button */
+.create-button {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #ffffff;
+}
+
+.create-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(59, 130, 246, 0.4);
+}
+
+/* Cancel Button */
+.cancel-button {
+  background-color: #1e293b;
+  color: #e5e7eb;
+}
+
+.cancel-button:hover {
+  background-color: #334155;
+}
