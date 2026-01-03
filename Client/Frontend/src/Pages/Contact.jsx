@@ -153,9 +153,10 @@ const DataTable = () => {
     };
 
     return fetch(url, requestOptions)
-      .then((response) => {
+      .then(async (response) => {
         if (!response.ok) {
-          throw new Error("Failed to create contact");
+          const errorData = await response.json().catch(() => ({}));
+          throw new Error(errorData.error || "Failed to create contact");
         }
         alert("Contact Added")
       })
